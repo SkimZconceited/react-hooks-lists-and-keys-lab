@@ -3,7 +3,7 @@ import ProjectItem from "./ProjectItem";
 
 function ProjectList({ projects }) {
   console.log(projects);
-  let spanProj = projects.map((project, id) => <ProjectItem name={project.name} about={project.about} technologies={project.technologies} />)
+  let spanProj = projects.map((project, id) => <ProjectItem key={id} name={project.name} about={project.about} technologies={project.technologies} />)
 
   return (
     <div id="projects">
